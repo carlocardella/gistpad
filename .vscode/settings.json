@@ -9,26 +9,5 @@
   },
   "search.exclude": {
     "out": true
-  },
-  "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#10bbeb",
-    "activityBar.activeBorder": "#d10ea6",
-    "activityBar.background": "#10bbeb",
-    "activityBar.foreground": "#15202b",
-    "activityBar.inactiveForeground": "#15202b99",
-    "activityBarBadge.background": "#d10ea6",
-    "activityBarBadge.foreground": "#e7e7e7",
-    "sash.hoverBorder": "#10bbeb",
-    "statusBar.background": "#0d95bb",
-    "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#10bbeb",
-    "statusBarItem.remoteBackground": "#0d95bb",
-    "statusBarItem.remoteForeground": "#e7e7e7",
-    "tab.activeBorder": "#10bbeb",
-    "titleBar.activeBackground": "#0d95bb",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveBackground": "#0d95bb99",
-    "titleBar.inactiveForeground": "#e7e7e799"
-  },
-  "peacock.color": "#0d95bb"
+  }
 }

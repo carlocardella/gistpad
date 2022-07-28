@@ -1,11 +1,6 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 
-const crypto = require("crypto");
-const crypto_orig_createHash = crypto.createHash;
-crypto.createHash = (algorithm) =>
-  crypto_orig_createHash(algorithm == "md4" ? "sha256" : algorithm);
-
 const config = {
   mode: "production",
   entry: "./src/extension.ts",
@@ -49,7 +44,6 @@ const nodeConfig = {
       "@abstractions": path.join(__dirname, "./src/abstractions/node")
     }
   },
-  devtool: "source-map",
   plugins: [
     new CopyPlugin([
       {
@@ -73,7 +67,6 @@ const webConfig = {
     libraryTarget: "commonjs2",
     devtoolModuleFilenameTemplate: "../[resource-path]",
   },
-  devtool: 'source-map',
   resolve: {
     ...config.resolve,
     alias: {
@@ -87,5 +80,6 @@ const webConfig = {
     child_process: "empty"
   }
 };
+
 
 module.exports = [nodeConfig, webConfig];
