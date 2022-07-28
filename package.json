@@ -4,6 +4,7 @@
   "description": "Manage your code snippets and developer notes using GitHub Gists and repositories.",
   "publisher": "vsls-contrib",
   "version": "0.5.0",
+  "preview": true,
   "extensionKind": [
     "ui",
     "workspace"
